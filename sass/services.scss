@@ -1,0 +1,17 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+/*     border:1px solid purple;
+ */
+    .services__main {
+        display: flex;
+    }
+
+    .services__service {
+        padding:3rem;
+        display:flex;
+        flex-direction: column;
+    }
+
+}

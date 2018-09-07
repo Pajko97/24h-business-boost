@@ -1,9 +1,17 @@
-$primaryColor : red;
-* {
-    margin: 1em;
-    padding: 1em;
-    color: $primaryColor;
-    box-sizing: border-box;
-    display: grid;
+@import './fonts';
+
+p {
+    font-family: $textFont;
 }
 
+h1, h2, h3, h4, a, li {
+    font-family: $headerFont;
+}
+
+a {
+    background-color:#5437DF;
+    color: gainsboro;
+}
+li {
+    padding:5px 10px;
+}

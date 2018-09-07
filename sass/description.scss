@@ -1,0 +1,17 @@
+.descriptions{
+    display:flex;
+    flex-direction: column;
+
+    .descriptions__description {
+        display:flex;
+        flex-direction: row;
+        width:80vw;
+        margin:2rem;
+
+
+    .description__descriptionText {
+        width:20%;
+        padding:2rem;
+    }
+ }
+}
