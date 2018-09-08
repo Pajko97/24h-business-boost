@@ -1,18 +1,27 @@
+@import './base';
 ul li {
     display:inline;
-    margin:25px;
+    margin:25px;  
+    background-color:$color1;  
 }
+a {
+    padding:8px 16px;
+    border-radius: 10px;
+    background-color:$color3;
+}
+
 ul {
-    border:1px solid red;
+    background-color: $color4;
     margin:0 auto;
     text-align:center;
     padding:20px;
+    margin:2%;
 }
 
 .navigation {
     display:flex;
     justify-content: center;
-    height:10vh;
+    height:auto;
 }
 
 

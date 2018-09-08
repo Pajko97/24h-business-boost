@@ -1,17 +1,25 @@
 @import './fonts';
+$color1 : '#395E66';
+$color2 : '#387D7A';
+$color3 : '#32936F';
+$color4 : '#26A96C';
+
 
 p {
     font-family: $textFont;
 }
 
+i {
+    align-self: center;
+}
+
+
 h1, h2, h3, h4, a, li {
     font-family: $headerFont;
 }
 
+
 a {
-    background-color:#5437DF;
-    color: gainsboro;
-}
-li {
-    padding:5px 10px;
+    background-color:#32936f;
+    color:gainsboro ;
 }
