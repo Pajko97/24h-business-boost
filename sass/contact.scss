@@ -1,4 +1,5 @@
 @import './base';
+@import './fonts';
 
 
 .contact {
@@ -29,12 +30,14 @@
         height:auto;
         width: 40vw;
         margin: 10vh auto;
+        font-family: 'Montserat', sans-serif;
         
         label {
             width:300px;
             padding:20px;
             align-self: left;
         }
+
         textarea {
             width:300px;
             height:200px;
@@ -42,7 +45,14 @@
             padding:1rem;
 
         }
-        
+
+        button {
+            border-radius:10px;
+            border:0 solid;
+            padding: 8px 16px;
+            margin:2%;
+        }
+
         input {
             width:300px;
             height:25px;

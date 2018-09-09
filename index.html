@@ -11,15 +11,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="compiled/output.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
         <script src="js/main.js"></script>
     </head>
     <body>
         <div class="wrapper">
                 <div class="nagivation">
                         <ul>
-                                <li><a>Usluge</a></li>
-                                <li><a>O nama</a></li>
-                                <li><a>Kontakt</a></li>
+                                <li><a href="#services">Usluge</a></li>
+                                <li><a href="#description">O nama</a></li>
+                                <li><a href="#contact">Kontakt</a></li>
 
 
                         </ul>
@@ -33,7 +35,7 @@
                     <p class="landing__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum magnam nesciunt mollitia tenetur hic ut esse quam exercitationem incidunt omnis repellendus eos, sequi atque vel reprehenderit necessitatibus voluptas. Pariatur, facilis.</p>
                 </div>
 
-                <div class="services">
+                <div class="services" id="services">
                   <h1>Nase usluge</h1>
                   <div class="services__main">
                     <div class="services__service">
@@ -58,7 +60,7 @@
                   </div>
                 </div>
 
-                <div class="descriptions">
+                <div class="descriptions" id="description">
                     <div class="descriptions__description">
                             <i class="fas fa-address-card fa-10x"></i>
 
@@ -98,18 +100,19 @@
                     
                 </div>
 
-                <div class="contact">
+                <div class="contact" id="contact">
                     <div class="contact__text"><p>Ukoliko vas interesuju nase usluge ili imate neko pitanje, kontaktirajte nas tako sto ce te popuniti formu ili pozivom na neki od telefona</p></div>
-                    <form>
+                    <form id="contact__form">
                             <label>Vas E-mail</label>
-                            <input type="text" name="from">
+                            <input type="text" id="mail-field">
                           
                             <label>Vase ime</label>
-                            <input type="text" name="subject">
+                            <input type="text" id="name-field">
                           
                             <label>Poruka</label>
-                            <textarea name="body"></textarea>
+                            <textarea id="message-field"></textarea>
 
+                            <button type="submit">Posalji</button>
                     </form>
                     <div class="contact__info">
                         <p>+381641116182<br/>+381641116182</p>
@@ -120,19 +123,17 @@
                 <footer>24h business boost © 2018</footer>
         </div>
         <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-        <script>
-
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCBQL_9bUFei73WZzFMb8JPF30TH_LONV8",
-            authDomain: "hbb-36f85.firebaseapp.com",
-            databaseURL: "https://hbb-36f85.firebaseio.com",
-            projectId: "hbb-36f85",
-            storageBucket: "",
-            messagingSenderId: "230716773049"
-        };
-        firebase.initializeApp(config);
-        
+        <script src="js/main.js">
+            var config = {
+               apiKey: "AIzaSyCBQL_9bUFei73WZzFMb8JPF30TH_LONV8",
+               authDomain: "hbb-36f85.firebaseapp.com",
+               databaseURL: "https://hbb-36f85.firebaseio.com",
+               projectId: "hbb-36f85",
+               storageBucket: "",
+               messagingSenderId: "230716773049"
+           };
+            firebase.initializeApp(config);
         </script>
+           
     </body>
 </html>
